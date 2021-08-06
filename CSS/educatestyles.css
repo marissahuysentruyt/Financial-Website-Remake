@@ -1,0 +1,1716 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
+
+
+* {
+    font-family: "Montserrat"; 
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+
+/*socials/contacts at top*/
+.contacts {
+    background-color: #112437;
+    display: flex;
+    height: 2rem;
+    width: 100%;
+    padding: 0 7.5rem;
+}
+
+.contacts .img1 a,
+.contacts .img2 a, 
+.contacts .img3 a {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.08);
+    height: 2rem;
+    width: 2rem;
+    margin-right: 1px;
+}
+
+.img1, .img2, .img3, .img4 {
+    display: flex;
+}
+
+.contacts .img4 {
+    background-color: rgba(255, 255, 255, 0.08);
+    height: 2rem;
+    padding-left: 7px;
+    padding-right: 10px; 
+    z-index: 0;
+    margin-left: auto;
+}
+
+.img1 img {
+    width: .48rem;
+    height: 1rem;
+    margin: auto;
+}
+
+.img2 img {
+    width: 1rem;
+    height: .95rem;
+    margin: auto;
+}
+
+.img3 img {
+    width: 1rem;
+    height: .66rem;
+    margin: auto;
+}
+
+.img4 p {
+    float: right;
+    color: white;
+    font-size: .85rem;
+    margin: auto;
+}
+
+.img4 .phone {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin: auto 10px;   
+}
+
+@media only screen and (max-width: 1024px) {
+    .contacts {
+        padding: 0 5.5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .contacts {
+        padding: 0 3rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .contacts {
+        padding: 0 1rem;
+    }
+}
+
+/*header with logo and navigation*/
+.header {
+    /* border: 1px solid red; */
+    display: flex;
+    height: 6.25rem;
+    background-color: white;
+    padding: 0 7.5rem;
+    flex-shrink: 1;
+    align-items: center;
+}
+
+.header .logo {
+    display: flex;
+    flex-shrink: 1;
+
+}
+
+.header div {
+    display: flex;
+}
+
+nav {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+nav ul {
+    /* border: 1px solid red; */
+    list-style-type: none;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-around;
+    flex-basis: 40%;
+    font-size: 1em;
+}
+
+nav ul a {
+    color: #112437;
+    text-decoration: none;
+    display: flex;
+    line-height: 2.8rem;
+    font-weight: 200;
+    flex-shrink: 1;
+}
+
+nav ul a:hover {
+    font-weight: 400;
+    
+}
+
+nav ul li {
+    padding: 0px;
+    margin: 0px;
+}
+
+nav a#schedule {
+    /* border: 1px solid red; */
+    text-decoration: none;
+    color: #fff;
+    align-self: center;
+    background-color: #A99C69;
+    height: 2.8em;
+    border-radius: 24px;
+    flex-shrink: 1;
+}
+
+nav a#schedule .overlay {
+    /* border: 1px solid blue; */
+    height: 2.8em;
+    border-radius: 24px;
+    padding: .75em 1em;
+}
+
+nav a#schedule .overlay:hover  {
+    box-shadow: 0px 0px 5px #A99C6940;
+    background: rgba(0, 0, 0, 0.16);
+}
+
+nav a#schedule .overlay:active {
+    background: rgba(0, 0, 0, 0.24);
+}
+
+
+
+nav a.button2 {
+    display: none;
+    background-color: rgba(0, 114, 180, 0.16);
+    color: #0072B4;
+    font-size: .75em;
+}
+
+nav ul a:nth-child(3) {
+    border-bottom: 2px solid #0072B4;
+}
+
+@media only screen and (max-width: 1024px) {
+    .header {
+        padding: 0 5.5rem;
+        /* border: 1px solid red; */
+        height: 10em;
+
+    }
+    
+    nav {
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        /* padding: 3%; */
+    }
+
+    nav ul {
+        display: flex;
+        /* border: 1px solid red; */
+        width: 100%;
+        margin-bottom: 4%;
+    }
+
+    nav ul a {
+        flex-shrink: 1;
+    }
+    
+    /* nav a.button1 {
+        border: 1px solid red;
+    }*/ 
+}
+
+@media only screen and (max-width: 768px){
+    .header {
+        padding: 0 3rem;
+        height: 6em;
+    }
+
+    nav ul li {
+        display: none;
+    }
+
+    nav a#schedule {
+        display: none;
+    }
+
+    nav {
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
+    nav a.button2 {
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-decoration: none;
+        border-radius: 24px;
+        height: 2.75rem;
+        width: 6.5rem;
+        padding-left: 1em;
+        padding-right: 1em;
+
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .header {
+        padding: 0 1rem;
+    }
+
+    .header .logo img {
+        width: 100%;
+        height: auto;
+    }
+
+    nav ul a {
+        display: none;
+    }
+
+    nav ul li {
+        display: none;
+    }
+
+    nav a#schedule {
+        display: none;
+    }
+
+    nav a.button2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-decoration: none;
+        border-radius: 24px;
+        height: 2.75rem;
+        width: 7.5rem;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+
+/* thank you message modal */
+/* window for modal, background */
+#modal {
+    display: none;
+    /* border: 1px solid red; */
+    position: fixed;
+    top: 0; 
+    left: 0;
+    z-index: 5;
+    background-color: #11243790;
+    width: 100%;
+    height: 100%;
+}
+
+/* the actual modal window that needs style */
+#modal .thankyou span {
+    /* border: 1px solid red; */
+    direction: rtl;
+    padding: 2% 2%;
+}
+
+#modal .thankyou {
+    /* border: 1px solid red; */
+    border-top: 6px solid #A99C69;
+    width: 40%;
+    margin: auto;
+    position: relative;
+    top: 10%;
+    background-color: #fff;
+    box-shadow: 0 4px 4px #11243790;
+    display: flex; 
+    flex-direction: column;
+    height: 30em;
+}
+
+#modal .thankyou .modal-content {
+    /* border: 1px solid red; */
+    margin: 5%;
+    padding: 5%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+
+}
+
+#modal .thankyou .modal-content .text-container {
+    /* border: 1px solid red; */
+    flex-direction: column;
+}
+
+#modal .thankyou .modal-content .text-container h3 {
+    padding-bottom: 5%;
+    color: #0072b4;
+}
+
+
+#modal .thankyou .modal-content .image-container {
+    background-color: #A99C6940;
+    border-radius: 50%;
+    height: 5em;
+    width: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+/* scheduling modal */
+/* window styles */
+#scheduleModal {
+    /* border: 1px solid red; */
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #11243790;
+    z-index: 15;    
+    overflow-y: auto;
+    
+}
+
+/* actual modal  */
+#scheduleModal .scheduling {
+    /* border: 1px solid blue; */
+    margin: auto;
+    width: 40%;
+    position: relative;
+    top: 10%;
+    border-top: 6px solid #A99C69;
+    padding: 0;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 4px #11243790;
+}
+
+#scheduleModal .scheduling span {
+    direction: rtl;
+    padding: 1%;
+    /* border: 1px solid red; */
+}
+
+#scheduleModal .scheduling .schedule-modal-content {
+    /* border: 1px solid purple; */
+    margin: 0 5%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 30rem;
+
+}
+
+#scheduleModal form {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+        "heading heading"
+        "first last"
+        "email phone"
+        "subject subject"
+        "message message"
+        "send send";
+    grid-template-columns: 50% 50%;
+    gap: 1%;
+    grid-template-rows: 10% 11% 11% 11% 1fr 12%;
+    grid-row-gap: 3%;
+    color: #112437;
+    padding-bottom: 10%;
+}
+
+#scheduleModal form .first {
+    grid-area: first;
+}
+
+#scheduleModal form .last {
+    grid-area: last;
+}
+#scheduleModal form .email {
+    grid-area: email;
+}
+#scheduleModal form .phone {
+    grid-area: phone;
+}
+#scheduleModal form .subject {
+    grid-area: subject;
+}
+#scheduleModal form .message {
+    grid-area: message;
+}
+
+#scheduleModal form h3 {
+    grid-area: heading;
+}
+
+#scheduleModal form .first, 
+#scheduleModal form .last, 
+#scheduleModal form .email, 
+#scheduleModal form .phone, 
+#scheduleModal form .subject, 
+#scheduleModal form .message {
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+} 
+
+#scheduleModal form .first input, 
+#scheduleModal form .last input, 
+#scheduleModal form .email input, 
+#scheduleModal form .phone input {
+    border: 1px solid transparent;
+    /* border: 1px solid red; */
+    width: 95%;
+    line-height: 2.5em;
+    background-color: #F0F5FB; 
+    /* border: 1px solid red; */
+}
+
+#scheduleModal form .subject input{
+    /* border: 1px solid red; */
+    border: 1px solid transparent;
+    width: 98%;
+    line-height: 2.5em;
+    background-color: #F0F5FB;
+}
+
+#scheduleModal form .message textarea {
+    /* border: 1px solid red; */
+    border: 1px solid transparent;
+    width: 98%;
+    height: 100%;
+    line-height: 2.5em;
+    background-color: #F0F5FB;
+}
+
+#scheduleModal form a {
+    /* border: 1px solid transparent; */
+    text-decoration: none;
+    /* border: 1px solid red; */
+    color: white;
+    border-radius: 24px;
+    padding: 0;
+    display: inline-flex;
+    width: 50%;
+    margin: auto;
+    align-items: center;
+    grid-area: send;
+    background: linear-gradient(rgb(0, 114, 180) 0%, rgb(55, 134, 227) 100%);
+    vertical-align: top;
+}
+
+#scheduleModal form a .overlay {
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7% 5%;
+}
+
+#scheduleModal form a .overlay:hover {
+    background-color: rgba(0, 0, 0, 0.16);
+    box-shadow: 0 4px 12px #0072b424;
+    cursor: pointer;
+}
+
+#scheduleModal form a .overlay:active {
+    background-color: rgba(0, 0, 0, 0.24);
+}
+
+@media only screen and (max-width: 1024px) {
+    #scheduleModal .scheduling .schedule-modal-content form a {
+        /* border: 1px solid red; */
+        width: 55%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #scheduleModal .scheduling,
+    #modal .thankyou {
+        width: 60%;
+        /* border: 1px solid red; */
+    }
+
+    #scheduleModal .scheduling .schedule-modal-content {
+        /* border: 1px solid red; */
+        width: 100%;
+        height: auto;
+        padding-right: 10%;
+    }
+
+    #scheduleModal .scheduling .schedule-modal-content form {
+        /* border: 1px solid blue; */
+        display: flex;
+        flex-basis: 100%;
+        flex-direction: column;
+     }
+
+    #scheduleModal .scheduling .schedule-modal-content form .first label, 
+    #scheduleModal .scheduling .schedule-modal-content form .last label, 
+    #scheduleModal .scheduling .schedule-modal-content form .email label, 
+    #scheduleModal .scheduling .schedule-modal-content form .phone label,
+    #scheduleModal .scheduling .schedule-modal-content form .subject label, 
+    #scheduleModal .scheduling .schedule-modal-content form .message label {
+        /* border: 1px solid red; */
+        line-height: 2.5em;
+        margin-top: 5%;
+    }
+
+    #scheduleModal .scheduling .schedule-modal-content form .first, 
+    #scheduleModal .scheduling .schedule-modal-content form .last, 
+    #scheduleModal .scheduling .schedule-modal-content form .email, 
+    #scheduleModal .scheduling .schedule-modal-content form .phone {
+        /* border: 1px solid blue; */
+        display: flex;
+        flex-direction: column;
+    }
+
+    #scheduleModal .scheduling .schedule-modal-content form .first input, 
+    #scheduleModal .scheduling .schedule-modal-content form .last input, 
+    #scheduleModal .scheduling .schedule-modal-content form .email input, 
+    #scheduleModal .scheduling .schedule-modal-content form .phone input, 
+    #scheduleModal .scheduling .schedule-modal-content form .subject input, 
+    #scheduleModal .scheduling .schedule-modal-content form .message textarea {
+        /* border: 1px solid red; */
+        width: 100%;
+    }
+    #scheduleModal .scheduling .schedule-modal-content form a {
+        /* border: 1px solid red; */
+        margin-top: 4%;
+    } 
+
+}
+
+@media only screen and (max-width: 375px) {
+    #scheduleModal {
+        padding: 3%;
+        /* border: 1px solid red; */
+
+    }
+    #scheduleModal .scheduling,
+    #modal .thankyou {
+        margin: 0;
+        /* border: 1px solid red; */
+        width: 100%;
+    }
+
+    #scheduleModal .scheduling .schedule-modal-content form a {
+        width: 60%;
+    }
+}
+
+/*page header- educate*/
+.page-header {
+    /* border: 1px solid red; */
+    padding: 5% 7.5%;
+    text-align: center;
+    color: #fff;
+    background-color: #112437;
+    z-index: 3;
+    overflow: hidden;
+    position: relative;
+}
+
+.page-header::before {
+    content: ' ';
+    height: 500px;
+    width: 400px;
+    /* border: 1px solid red; */
+    background-color:rgba(0, 0, 0, 0.24);
+    position: absolute;
+    top: -100px; 
+    left: 80%;
+    z-index: 1;
+    transform: rotate(30deg);
+}
+
+.page-header::after {
+    content: ' ';
+    height: 500px;
+    width: 400px;
+    /* border: 1px solid red; */
+    background-color:rgba(0, 0, 0, 0.24);
+    position: absolute;
+    top: -100px; 
+    left: 85%;
+    z-index: 2;
+    transform: rotate(30deg);
+}
+
+.page-header h2 {
+    font-size: 2em;
+    margin-bottom: 1%;
+}
+
+.page-header h4 {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.06rem;
+}
+
+@media only screen and (max-width: 765px) {
+    .page-header {
+        padding: 10%;
+    }
+}
+
+/* hero-section*/
+.hero-section {
+    display: flex;
+    flex-basis: 100%;
+    padding: 5%;
+    /* border: 1px solid red; */
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero-section .text-container {
+    /* border: 1px solid red; */
+    flex-basis: 30%;
+}
+
+.hero-section .text-container h4 {
+    font-size: 14px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #0072b4;
+    padding-bottom: 2%;
+}
+
+.hero-section .text-container h2 {
+    font-size: 2em;
+    color: #112437;
+
+}
+
+.hero-section .text-container #goldstripe {
+    height: 6px;
+    width: 3em;
+    background-color: #A99C69;
+    margin-top: 5%;
+    margin-bottom: 13%;
+}
+
+.hero-section .text-container p {
+    font-size: 18px;
+    line-height: 2em;
+    width: 95%;
+    margin-bottom: 15%;
+}
+
+.hero-section .text-container a.button {
+    /* border: 1px solid red; */
+    text-decoration: none;
+    border-radius: 24px;
+    vertical-align: top;
+    width: 50%;
+    display: inline-flex;
+}
+
+.hero-section .text-container a.button .overlay {
+    /* border: 1px solid blue; */
+    border-radius: 24px;
+    text-align: center;
+    padding: 3%;
+    align-items: center;
+    color: #0072b4;
+    width: 100%;
+    background-color: #0072b416;
+}
+
+.hero-section .text-container a.button .overlay:hover {
+    background-color: #0072b432;
+}
+
+.hero-section .text-container a.button .overlay:active {
+    background-color: #0072b424;
+}
+
+/* because this isn't a real video, the responsiveness isn't accurate. I'd have to do a lot more fiddling to make sure an actual video was responsive (potentially max-height, absolute positioning top/bottom/left/right etc.) */
+.hero-section .video {
+    position: relative;
+}
+
+.hero-section .video::after {
+    content: " ";
+    border: 1px solid #A99C69;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0.75em;
+    left: 1em;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 1024px) {
+    .hero-section {
+        flex-direction: column;
+        padding-top: 10%;
+    }
+
+    .hero-section .text-container {
+        /* border: 1px solid red; */
+        margin-bottom: 8%;
+    }
+
+    .hero-section .text-container #goldstripe {
+        /* border: 1px solid red; */
+        margin-bottom: 1.5em;
+    }
+
+    .hero-section .text-container p {
+        /* border: 1px solid red; */
+        margin-bottom: 3em;
+    }
+
+    .hero-section .video img {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-section .text-container a.button {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-section .text-container {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-basis: 100%;
+    }
+
+    .hero-section .text-container a.button {
+        width: 25%;
+        /* border: 1px solid red; */
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .hero-section .text-container a.button {
+        width: 50%
+    }
+}
+
+/* learning lounge */
+.learning-lounge {
+    /* border: 1px solid red; */
+    display: flex;
+    padding: 2% 0 5% 0;
+    flex-basis: 100%;
+}
+    
+.learning-lounge .text-container {
+    /* border: 1px solid red; */
+    flex-basis: 50%;
+    padding: 5%;
+    /* align-items: space-evenly; */
+    background-color: #F0F5FB;
+}
+
+.learning-lounge .text-container p {
+    padding: 7% 0; 
+    color: #112437;
+    font-size: 18px;
+    line-height: 2em;
+    width: 87%;
+}
+
+.learning-lounge .text-container img {
+    border: 1px solid #0072B4;
+    
+}
+
+.learning-lounge .text-container h2 {
+    color: #112437;
+    font-size: 2em;
+    width: 70%;
+    /* border: 1px solid red; */
+    padding-bottom: 5%;
+}
+
+.learning-lounge .image-container {
+    flex-basis: 50%;
+    /* border: 1px solid red; */
+}
+
+.learning-lounge .image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+/*did not add enough space & padding to any gold buttons on offering page... */
+.learning-lounge .text-container a.button {
+    /* border: 1px solid red; */
+    border-radius: 24px;
+    text-decoration: none;
+    color: #fff;
+    width: 35%;
+    display: inline-flex;
+    background-color: #A99C69;
+    vertical-align: top;
+}
+
+.learning-lounge .text-container a.button .overlay {
+    /* border: 1px solid blue; */
+    display: inline-flex;
+    justify-content: space-around;
+    border-radius: 24px;
+    padding: 6%;
+    width: 100%;
+    /* background-color: #A99C69; */
+}
+
+.learning-lounge .text-container a.button .overlay:hover {
+    box-shadow: 0px 0px 5px #A99C6940;
+    background-color: rgba(0, 0, 0, 0.16);
+
+}
+
+.learning-lounge .text-container a.button .overlay:active {
+    background-color: rgba(0, 0, 0, 0.24);
+}
+
+.learning-lounge .text-container a.button .overlay img {
+    border: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    .learning-lounge {
+        /* border: 1px solid red; */
+        flex-direction: column-reverse;
+    }
+
+    .learning-lounge .image-container img {
+        height: auto;
+    }
+
+    .learning-lounge .text-container a.button {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .learning-lounge .image-container, 
+    .learning-lounge .text-container {
+        flex-basis: 100%;
+    }
+
+    .learning-lounge .text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* border: 1px solid red; */
+    }
+
+    .learning-lounge .text-container h2 {
+        /* border: 1px solid red; */
+        width: 100%;
+        text-align: center;
+    }
+
+    .learning-lounge .text-container a.button {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .learning-lounge .text-container a.button {
+        width: 50%;
+    }
+}
+
+/* youtube videos */
+.youtube {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-areas: 
+        "book"
+        "annuities"
+        "income"
+        "life"
+        "tax";
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 5%;
+    padding: 1% 5% 30% 5%;
+}
+
+.youtube .grid-row-book h2, 
+.youtube .grid-row-annuities h2,
+.youtube .grid-row-income h2,
+.youtube .grid-row-life h2,
+.youtube .grid-row-tax h2 {
+    font-size: 1.5em;
+    line-height: 2.5em;
+}
+
+.youtube .grid-row-book .iframes, 
+.youtube .grid-row-annuities .iframes,
+.youtube .grid-row-income .iframes,
+.youtube .grid-row-life .iframes,
+.youtube .grid-row-tax .iframes {
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.youtube .bottom_cta {
+    /* border: 1px solid red; */
+    text-align: center;
+}
+
+.youtube .bottom_cta h3 {
+    color: #0072b4;
+    margin-bottom: 3%;
+    font-size: 1.5em;
+}
+
+.youtube .bottom_cta a.button {
+    /* border: 1px solid red; */
+    border-radius: 24px;
+    text-decoration: none;
+    width: 13%;
+    /* padding: 1% 0; */
+    vertical-align: top;
+    display: inline-flex;
+    background: linear-gradient(to right, rgb(0, 114, 180) 0%, rgb(55, 134, 227) 100%);
+}
+
+.youtube .bottom_cta a.button .overlay {
+    display: inline-flex;
+    /* border: 1px solid blue; */
+    border-radius: 24px;
+    padding: 7%;
+    width: 100%;
+    justify-content: space-around;
+    overflow: hidden;
+    color: #fff;
+}
+
+.youtube .bottom_cta a.button .overlay:hover {
+    box-shadow: 0 4px 16px rgba(0, 114, 180, 0.24);
+    background-color: rgba(0, 0, 0, 0.16);
+}
+
+.youtube .bottom_cta a.button .overlay:active {
+    background-color: rgba(0, 0, 0, 0.24);
+}
+
+@media only screen and (max-width: 1024px) {
+    .youtube {
+        /* border: 1px solid red; */
+        padding-bottom: 45%;
+        grid-row-gap: 1%;
+        grid-template-rows: auto auto auto auto auto;
+    }
+
+    .youtube .grid-row-book .iframes, 
+    .youtube .grid-row-annuities .iframes, 
+    .youtube .grid-row-income .iframes, 
+    .youtube .grid-row-life .iframes, 
+    .youtube .grid-row-tax .iframes {
+        flex-direction: column;
+        height: auto;
+        align-content: space-between;
+    }
+
+    .youtube .bottom_cta a.button {
+        width: 17%;
+        
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .youtube .bottom_cta a.button {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .youtube {
+        /* border: 1px solid red; */
+        padding-bottom: 50%;
+    }
+
+    .youtube .bottom_cta a.button {
+        width: 50%;
+        
+    }
+}
+
+/* would definitely REDO this book portion... */
+/* book */
+.book_cta {
+    /* border:1px solid red; */
+    background-color: #F0F5FB;
+    color: #112437;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 7.5rem;
+    padding-bottom: 0;
+    overflow: hidden;
+}
+
+.book_cta h5 {
+    color: #0072B4;
+    font-size: .875em;
+}
+
+.book_cta h3 {
+    font-size: 2em;
+    margin-bottom: 4%;
+    /* border: 1px solid red; */
+}
+
+.book_bullets {
+    /* border: 1px solid red; */
+    width: 28.625rem;
+    height: auto;
+    margin-top: 2.1rem;
+    margin-right: auto;
+    float: left;
+}
+
+.book_bullets ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.book_bullets li {
+    padding-left: 2.1rem;
+    width: 28.6rem;
+    margin-bottom: 1em;
+    line-height: 2;
+}
+
+.book_cta .text-container #goldstripe {
+    height: .375rem;
+    width: 3rem;
+    background-color: #A99C69;
+    /* margin-top: 5%; */
+}
+
+/*checkmark doesn't line up with the top of text?*/
+.check {
+    background-image: url(../Used_Resources/check.svg);
+    background-repeat: no-repeat;
+}
+
+.check:last-child {
+    margin-bottom: 40px;
+}
+
+.columns {
+    display: flex;
+    height: 20.3rem;
+    /* border: 1px solid black; */
+}
+
+.book-container {
+    /* border: 1px solid red; */
+    flex-basis: 80%;
+    height: 38rem;
+}
+
+.book-circle {
+    /* border: 1px solid red; */
+    border-radius: 50%;
+    height: 50em;
+    width: 50em;
+    background: linear-gradient(90deg, rgba(0,114,180,0.05), rgba(55,134,227,0.05));
+    position: relative;
+    left: 30%;
+}
+
+.book-circle img {
+    /* border: 1px solid red; */
+    position: relative;
+    top: 150px;
+    transform: rotate(-30deg);
+    /* transform: rotateY(30deg); */
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.16);
+    height: auto;
+}
+
+.book_btn {
+    background-color: #A99C69;
+    height: 2.75rem;
+    width: 11.875rem;
+    border-radius: 24px;
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+}
+
+.book_btn a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 2.75rem;
+    display: flex;
+    border-radius: 24px;
+    height: 2.75rem;
+}
+
+.book_btn img {
+    height: 1.25rem;
+    width: 1.25rem;
+    align-self: center;
+    margin-left: 8px;
+}
+
+.book_btn a .overlay {
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    width: 11.875rem;
+}
+
+.book_btn a .overlay:hover {
+    box-shadow: 0px 0px 5px #A99C6940;
+    background: rgba(0, 0, 0, 0.16);
+}
+
+.book_btn a .overlay:active {
+    background: rgba(0, 0, 0, 0.24);
+}
+
+@media only screen and (max-width: 1024px) {
+    .book_cta {
+        padding: 5.5rem;
+        padding-bottom: 0;
+    }
+
+    .book_cta h3 {
+        width: 26rem;
+        height: 4rem;
+    }
+    
+    .book_bullets {
+        width: 26rem;
+        margin-top: 1.5rem;
+    }
+    
+    .book_bullets li {
+        padding-left: 1.5rem;
+        width: 26rem;
+        margin-bottom: 1em;
+        line-height: 1.75;
+        font-size: 90%;
+    }
+    
+    .columns {
+        height: 14.5rem;
+    }
+    
+    .book-circle {
+        border-radius: 50%;
+        left: 10%;
+    }
+    
+    .book-circle img {
+        /* border: 1px solid red; */
+        position: absolute;
+        left: -10px;
+        bottom: 100px;
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .book_cta {
+        display: flex;
+        flex-direction: column-reverse;
+        /* border: 1px solid red; */
+        padding-bottom: 5.5rem;
+    }
+
+    .book_cta h3 {
+        width: 100%;
+        height: auto;
+    }
+
+    .columns {
+        height: auto;
+        /* border: 1px solid red; */
+    }
+
+    .book_cta .text-container #goldstripe {
+        /* border: 1px solid red; */
+        margin-bottom: 3%;
+    }
+
+    .book_bullets {
+        width: auto;
+        margin: auto;
+        /* border: 1px solid red; */
+    }
+
+    .book_bullets li {
+        /* border: 1px solid red; */
+        width: 100%;
+    }
+
+    .book-circle {
+        height: 35rem;
+        width: 35rem;
+        padding-top: 2rem;
+        left: 30%;
+    }
+    
+    .book-circle img {
+        height: auto;
+        margin: auto;
+        /* border: 1px solid red; */
+        left: -10%;
+        top: 5%;
+        width: 70%;
+
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .book_cta {
+        /* border: 1px solid red; */
+        padding: 3rem;
+        height: auto;
+    }   
+
+    .book_bullets {
+        height: 50%;
+        width: auto;
+        /* border: 1px solid black; */
+    }
+
+    .book_bullets li  {
+        /* border: 1px solid purple; */
+        height: auto;
+        width: auto;
+    }
+
+    .book-circle {
+        height: 20rem;
+        width: 20rem;
+    }
+    
+    .book-circle img {
+        /* border: 1px solid red; */
+        width: 80%;
+        left: -20%;
+        top: 15%;
+    }
+}     
+
+/*"next steps" blue cta*/
+.main_cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 21.125rem;
+    width: 100%;
+    background: linear-gradient(45deg, #0072B4, #3786E3);
+    text-align: center;
+}
+
+.main_cta h5 {
+    font-size: .875rem;
+    color: #fff;
+    letter-spacing: 1pt;
+}
+
+.main_cta sup {
+    font-size: .5rem;
+    color: #fff;
+}
+
+.main_cta h3 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+.main_cta .schedule_btn a {
+    /* border: 1px solid red; */
+    background-color: #fff;
+    text-decoration: none;
+    display: flex;
+    font-size: .875rem;
+    justify-content: center;
+    text-align: center;
+    line-height: 2.75rem;
+    height: 2.75rem;
+    width: 11rem;
+    border-radius: 24px;
+    color: #0072B4;
+}
+
+.main_cta .schedule_btn a:hover {
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.24);
+}
+
+.main_cta .schedule_btn a:active {
+    text-shadow: 15px 15px 15px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.24);
+    background-color: rgba(255, 255, 255, 0.84);
+}
+
+/*contact, location, learning lounge*/
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    padding-left: 7.5rem;
+    padding-right: 7.5rem;
+    height: 18.5rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: #112437;
+}
+
+.contact-container .col {
+    width: 18.5rem;
+    margin-top: 4rem;
+    flex-basis: 24%;
+}
+
+.contact-container .col h5 {
+    font-size: .875rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.5pt;
+}
+
+.contact-container .col p {
+    line-height: 1.5rem;
+}
+
+.contact-container a {
+    letter-spacing: 0.5pt;
+    color: #0072B4;
+}
+
+.contact-container .col1 a {
+    text-decoration: none;
+    color: #112437;
+    letter-spacing: normal;
+}
+
+.contact-container .col1 a:hover {
+    color: #0072B4;
+}
+
+.contact-container .col2 a:hover, 
+.contact-container .col3 a:hover {
+    text-decoration: none;
+}
+
+.contact-container .col4 {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container .col4 h5 {
+    text-transform: uppercase;
+}
+
+.contact-container .col4 .gold-socials {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+
+.contact-container .col4 .gold-socials a {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #A99C69;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-container .col4 .gold-socials a.img1 .overlay, 
+.contact-container .col4 .gold-socials a.img2 .overlay, 
+.contact-container .col4 .gold-socials a.img3 .overlay {
+    /* border: 1px solid purple; */
+    width: 2.75em;
+    height: 2.75em;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.contact-container .col4 .gold-socials a.img1 .overlay:hover, 
+.contact-container .col4 .gold-socials a.img2 .overlay:hover, 
+.contact-container .col4 .gold-socials a.img3 .overlay:hover {
+    box-shadow: 0px 0px 5px #A99C6940;
+    background: rgba(0, 0, 0, 0.16);
+}
+
+.contact-container .col4 .gold-socials a.img1 .overlay:active, 
+.contact-container .col4 .gold-socials a.img2 .overlay:active, 
+.contact-container .col4 .gold-socials a.img3 .overlay:active {
+    background: rgba(0, 0, 0, 0.24);
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .contact-container {
+        padding-left: 5.5rem;
+        padding-right: 5.5rem;
+        height: 18.5rem;
+    }
+    
+    .contact-container .col {
+        width: 100%;
+        margin-top: 3rem;
+    }
+    
+    .contact-container .col h5 {
+        font-size: .68rem;
+        margin-bottom: 1rem;
+    }
+    
+    .contact-container .col p {
+        line-height: 1.3rem;
+        font-size: 75%;
+    }
+
+    .contact-container .col2 a, 
+    .contact-container .col3 a {
+        font-size: 75%;
+    }  
+}
+
+@media only screen and (max-width: 768px) {
+    .contact-container {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding-bottom: 8%;
+        align-items: center;
+        margin: auto;
+    }
+
+    .contact-container .col {
+        /* border: 1px solid red; */
+        width: auto;
+        text-align: center;
+    }
+
+.contact-container .col4 .gold-socials {
+        /* border: 1px solid red; */
+        width: auto;
+    }
+}    
+
+/*privacy & legal section*/
+#privacy_legal {
+    background-color: #F0F5FB;
+    color: #112437;
+    height: 25.75rem;
+    padding: 4rem 7.5rem;
+    display: flex;
+    flex-direction: column;
+    font-size: .75rem;
+}
+
+.bbb {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4rem;
+    justify-content: space-between;
+    line-height: 1.25rem;
+}
+
+/*is this supposed to be a link?*/
+.bbb img {
+    height: 5rem;
+    width: 6.625rem;
+    margin-right: 1rem;
+}
+
+.bbb .col_left {
+    height: 8.75rem;
+    flex-basis: 37%;
+}
+
+.bbb .col_right {
+    height: 8.75rem;
+    flex-basis: 47%;
+}
+
+.legal {
+    line-height: 1.25rem;
+    padding: .625rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    #privacy_legal {
+        height: 23rem;
+        padding: 2.5rem 5.5rem;
+    }
+    
+    .bbb .col_left {
+        height: 8.75rem;
+        flex-basis: 33%;
+        font-size: 90%;
+    }
+    
+    .bbb .col_right {
+        height: 8.75rem;
+        flex-basis: 43%;
+        font-size: 90%;
+    }
+    
+    .legal {
+        font-size: 90%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #privacy_legal {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid red; */
+    }
+
+    .bbb {
+        /* border: 1px solid red; */
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bbb img {
+        /* border: 1px solid red; */
+        margin: auto;
+    }
+
+    .bbb .col_left {
+        /* border: 1px solid red; */
+        margin: 3% auto;
+    }
+
+    .bbb .col_right {
+        margin: 3% auto;
+    }    
+}
+
+@media only screen and (max-width: 375px) {
+    .bbb .col_left {
+        margin: 15% auto;
+    }
+}
+
+/*image footer (struggled with naming)*/
+
+.footer {
+    background-image: url(../Used_Resources/footer_image.jpg);
+    /* border: 1px solid red; */
+}
+
+.center-logo {
+    display: flex;
+    height: 15rem;
+    width: 100%;
+    /* border: 1px solid red; */
+
+}
+
+.center-logo img {
+    height: 4rem;
+    width: 14.125rem;
+    margin: auto;
+}
+
+.end {
+    background-color: #112437;
+    color: white;
+}
+
+.bottom {
+    display: flex;
+    height: 4rem;
+    padding-left: 7.5rem;
+    padding-right: 7.5rem;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom .links a {
+    text-decoration: none;
+    color: #fff;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.bottom .links a.link1 {
+    border-right: 1px solid #fff;
+    padding-right: 11px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .bottom {
+        height: 3rem;
+        padding-left: 5.5rem;
+        padding-right: 5.5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .bottom {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+        padding-top: 7%;
+        padding-bottom: 7%;
+    }
+
+    .bottom p {
+        /* border: 1px solid red; */
+        padding-top: 3%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .bottom {
+        width: auto;
+        /* border: 1px solid white; */
+        padding: 7% 0;
+    }
+    
+    .bottom p {
+        padding: auto;
+        width: 100%;
+        text-align: center;
+    }   
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/teststyles.css">
+</head>
+<body>
+
+    <a id="mobile" class="button2" href="#">
+        MENU <img src="../Used_Resources/menu.svg" alt="">
+    </a>
+
+    <div id="mobile-menu">
+        <div class="spans">
+            <span class="logo-container"><img src="https://dummyimage.com/212x60/0072b4/fff&text=Logo" alt="Fake Financial Group, Inc."></span>
+            <span class="mobile-close"><img src="../Used_Resources/close.svg" alt="close"></span>
+        </div>
+        <ul>
+            <a href="offerings.html"><li>Offerings</li></a>
+            <a href="about.html"><li>About</li></a>
+            <a href="educate.html"><li>Educate</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+            <a id="schedule" href="#">
+                <li>
+                    <div class="overlay">
+                        Schedule a Meeting
+                    </div>
+                </li>
+            </a>
+        </ul>
+    </div>
+
+    <script>
+        let menu = document.getElementById("mobile");
+        let dropdown = document.getElementById('mobile-menu');
+        let menuClose = document.getElementsByClassName("mobile-close")[0];
+
+        menu.onclick = function() {
+            dropdown.style.display = "block";
+        };
+
+        menuClose.onclick = function() {
+            dropdown.style.display = "none";
+        };
+
+        window.onclick = function(event) {
+            if(event.target == menu) {
+                dropdown.style.display = "none";
+            }
+        };
+
+    </script>
+
+</body>
+</html>

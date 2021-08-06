@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../CSS/contactstyles.css" type="text/css">
+</head>
+<body>
+
+    <div id="body">
+
+        <header>
+            <div class="contacts">
+                <div class="img1">
+                    <a href="#"><img src="../Used_Resources/facebook.svg" alt="Facebook"></a>
+                </div>
+                <div class="img2">
+                    <a href="#"><img src="../Used_Resources/linked_in.svg" alt="LinkedIn"></a>
+                </div>
+                <div class="img3">
+                    <a href="#"><img src="../Used_Resources/youtube.svg" alt="YouTube"></a>
+                </div>
+                <div class="img4">
+                    <img class="phone" src="../Used_Resources/Phone.svg" alt="Telephone">
+                    <p>123-456-7890</p>
+                </div>
+            </div>
+
+            <div class="header">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="https://dummyimage.com/212x60/0072b4/fff&text=Logo" alt="Fake Financial Group, Inc.">
+                    </a>
+                </div>
+                <nav>
+                    <ul class="navigation">
+                        <a href="offerings.html"><li>Offerings</li></a>
+                        <a href="about.html"><li>About</li></a>
+                        <a href="educate.html"><li>Educate</li></a>
+                        <a href="contact.html"><li>Contact</li></a>
+                    </ul>
+                    <a id="schedule" href="#">
+                        <div class="overlay">
+                            Schedule a Meeting
+                        </div>
+                    </a>
+                    <a class="button2" href="schedule.html">MENU <img src="../Used_Resources/menu.svg" alt=""></a>
+                    <!--can i add a dropdown that will actually appear during mobile use?-->
+                </nav>
+
+                <div id="scheduleModal">
+                    <div class="scheduling">
+                        <span class="close-schedule"><img src="../Used_Resources/close.svg" alt="close"></span>
+
+                        <div class="schedule-modal-content">
+                            <form action="#" method="GET">
+                                <h3>Schedule a meeting</h3>
+            
+                                <div class="first">
+                                    <label for="first-name" >First Name*</label>
+                                    <input type="text" id="first-name" name="first-name" required="required" placeholder="First Name">
+                                </div>
+            
+                                <div class="last">
+                                    <label for="last-name" >Last Name*</label>
+                                    <input type="text" id="last-name" name="last-name" required="required" placeholder="Last Name">
+                                </div>
+            
+                                <div class="email">
+                                    <label for="email" >Email*</label>
+                                    <input type="email" id="email" name="email" required="required" placeholder="Email">
+                                </div>
+                                
+                                <div class="phone">
+                                    <label for="phone" >Phone</label>
+                                    <input type="text" id="phone" name="phone" placeholder="Phone">
+                                </div>
+            
+                                <div class="subject">
+                                    <label for="subject" >Subject</label>
+                                    <input type="text" id="subject" name="subject" placeholder="What is your message about?">
+                                </div>
+                                
+                                <div class="message">
+                                    <label for="message">Message</label>
+                                    <textarea type="text" id="message" name="message" placeholder="Type your message here..."></textarea>
+                                </div>
+                                
+                                <a type="button" href="#" id="send"> 
+                                    <div class="overlay" id="schedule">
+                                        Send Message <img src="../Used_Resources/Iconly/Light/Arrow - Right.svg" alt="Send Message">
+                                    </div>
+                                </a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+        <main>
+
+            <div class="page-header">
+                <h2>Contact Us</h2>
+                <h4>We would love to chat</h4>
+            </div>
+
+            <div class="hero-section">
+                <h3>Let's get you where you want to go. 
+                    <div id="goldstripe"></div>
+                </h3>
+                <p class="left">Founded in 2001 in The Villages®, Florida, a retirement community recently called the “nation’s fastest growing metro area” by the Orlando Sentinel, Fake Financial Group, Inc. is
+                </p>
+                <p class="right">a financial services firm that has helped thousands of retirees and people nearing retirement age achieve peace of mind by designing personalized retirement planning strategies for careful investors.
+                </p>
+            </div>
+
+            <div class="message-form">
+
+                <form action="#" method="GET">
+                    <h3>Send us a message</h3>
+
+                    <div class="first">
+                        <label for="first-name" >First Name*</label>
+                        <input type="text" id="first-name" name="first-name" required="required" placeholder="First Name">
+                    </div>
+
+                    <div class="last">
+                        <label for="last-name" >Last Name*</label>
+                        <input type="text" id="last-name" name="last-name" required="required" placeholder="Last Name">
+                    </div>
+
+                    <div class="email">
+                        <label for="email" >Email*</label>
+                        <input type="email" id="email" name="email" required="required" placeholder="Email">
+                    </div>
+                    
+                    <div class="phone">
+                        <label for="phone" >Phone</label>
+                        <input type="text" id="phone" name="phone" placeholder="Phone">
+                    </div>
+
+                    <div class="subject">
+                        <label for="subject" >Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="What is your message about?">
+                    </div>
+                    
+                    <div class="message">
+                        <label for="message">Message</label>
+                        <textarea type="text" id="message" name="message" placeholder="Type your message here..."></textarea>
+                    </div>
+                    
+                    <a type="button" href="#"> 
+                        <div class="overlay" id="submit">
+                            Send Message <img src="../Used_Resources/Iconly/Light/Arrow - Right.svg" alt="Send Message">
+                        </div>
+                    </a>
+                </form>
+            </div>
+
+            <div id="modal">
+                <div class="thankyou">
+                    <span class="close"><img src="../Used_Resources/close.svg" alt="close"></span>
+                    
+                    <div class="modal-content">
+                        <div class="image-container">
+                            <!-- not a gold arrow, a gold check! -->
+                            <img src="../Used_Resources/gold_arrow_2x.png" alt="Gold Check">
+                        </div>
+                        <div class="text-container">
+                            <h3>Thank You!</h3>
+                            <p>Thanks for submitting your message. You will be hearing from us shortly!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="find-us">
+                <h2>Find Us</h2>
+                <div class="map-card">
+                    <div class="addresses">
+                        <div class="row row1">
+                            <h4>OUR LOCATION</h4>
+                            <p>Colony Professional Plaza</p>
+                            <p>123 Fake Way; Suite 007</p>
+                            <p>The Villages, FL 32163</p>
+                            <a href="#">Get Directions</a>
+                        </div>
+                        <div class="row row2">
+                            <h4>THE FAKE LEARNING LOUNGE</h4>
+                            <p>1234 Fake Road</p>
+                            <p>The Villages, FL 32163</p>
+                            <p>Phone: 123-456-7890</p>
+                            <a href="#">Get Directions</a>
+                        </div>
+                    </div>
+
+                    <div class="map">
+                        <img src="https://dummyimage.com/788x456/b8fcc1/385cff&text=MAP!" alt="Map">
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_cta">
+                <h5>LEARN HOW TO GET THE LIFE YOU WANT</h5>
+                <h3>Take the next step to financial freedom.</h3>
+
+                <div id="ctaSchedule" class="schedule_btn">
+                    <a href="#">Schedule a Meeting</a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="contact-container">
+            <div class="col col1">
+                <h5>CONTACT US</h5>
+                <p>Phone: 123-456-7890</p>
+                <p>Fax: 123-456-7890</p>
+                <p>Email: <a href="mailto:info@fakefinancial.come">info@fakefinancial.com</a></p>
+            </div>
+            <div class="col col2">
+                <h5>OUR LOCATION</h5>
+                <p>Colony Professional Plaza</p>
+                <p>123 Fake Way; Suite 007</p>
+                <p>The Villages, FL 32163</p>
+                <a href="#">Get Directions</a>
+            </div>
+            <div class="col col3">
+                <h5>THE FAKE LEARNING LOUNGE</h5>
+                <p>1234 Fake Road</p>
+                <p>The Villages, FL 32163</p>
+                <p>Phone: 123-456-7890</p>
+                <a href="#">Get Directions</a>
+            </div>
+            <div class="col col4">
+                <h5>Check us out on social</h5>
+                <div class="gold-socials">
+                        
+                    <a href="#" class="img1">
+                        <div class="overlay">
+                            <img src="../Used_Resources/facebook.svg" alt="Facebook">
+                        </div>
+                    </a>
+                
+                    <a href="#" class="img2">
+                        <div class="overlay">
+                            <img src="../Used_Resources/linked_in.svg" alt="Linked In">
+                        </div>
+                    </a>
+                
+                
+                <a href="#" class="img3">
+                    <div class="overlay">
+                        <img src="../Used_Resources/youtube.svg" alt="YouTube">
+                        </div>
+                    </a>
+                
+                </div>
+            </div>
+        </div>
+
+        <div id="privacy_legal">
+        <div class="bbb">
+            <img src="../Used_Resources/bbb.png" alt="">
+            <div class="privacy col_left">
+                Fake Financial Group, Inc. is a proud member of the Central Florida Better Business Bureau, a non-profit organization dedicated to the promotion and fostering of the highest ethical relationship between businesses and the public. Fake Financial Group, Inc. has been a BBB Accredited business since April 26, 2002 and has achieved an A+ rating*.
+            </div>
+            <div class="privacy col_right">
+                Fake Financial Group, Inc. is a licensed insurance agency and works closely with Fake Tax Solutions, LLC and Fake Wealth Management, LLC to provide various services to our clients.  Fake Financial Group, Inc. provides retirement income planning strategies and sells fixed indexed annuities and life insurance products.  Fake Tax Solutions is an accounting and tax firm that helps provide tax planning and tax preparation for our Fake Financial Group, Inc. clients.  Fake Wealth Management is a Registered Investment Advisory firm offering financial planning services.
+            </div>
+        </div>
+
+        <div class="legal">
+            The content on this web page is for educational purposes only, and should not be relied on for tax, legal, investment, or accounting advice. Annuity guarantees are backed by the financial strength and claims-paying ability of the issuing carrier. You may inquire about a future appointment to continue discussing whether or not annuities or life insurance are suitable for your individual needs. The Fake Financial Learning Lounge® is not an accredited education center. Fake Financial Group, Inc. is a licensed insurance agency and works closely with Fake Tax Solutions, LLC.
+        </div>
+        </div>
+
+        <div class="footer">
+            <div class="center-logo">
+                    <img src="https://dummyimage.com/212x60/fff/0072b4&text=Logo" alt="Fake Logo">
+            </div>
+
+            <div class="end">
+                <div class="bottom">
+                    <p>&copy2020 Fake Financial Group, Inc</p>
+                        <div class="links">
+                            <a class="link1" href="#">Privacy Statement</a>
+                            <a class="link2" href="#">Terms of Use</a>
+                    <!--widget for recaptcha from google. grab the code? recaptcha flag?-->
+                        </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- modal scripts -->
+    <script>
+        // both forms go to thank you modal
+
+        // main cta schedule
+        let ctaSchedule = document.getElementById("ctaSchedule");
+
+        // schedule modal variables
+        let scheduleModal = document.getElementById("scheduleModal");
+        let schedule = document.getElementById("schedule");
+        let send = document.getElementById("send");
+        let closeSchedule = document.getElementsByClassName("close-schedule")[0];
+
+        // contact form modal variables
+        let modal = document.getElementById("modal");
+        let button = document.getElementById("submit");
+        let close = document.getElementsByClassName("close")[0];
+
+        ctaSchedule.onclick = function() {
+            scheduleModal.style.display = "block";
+            console.log("start scheduling");
+        };
+
+        schedule.onclick = function() {
+            scheduleModal.style.display = "block";
+            console.log("start scheduling");
+        };
+
+        send.onclick = function() {
+            scheduleModal.style.display = "none";
+            modal.style.display = "block";
+            console.log("schedule sent");
+        };
+
+        closeSchedule.onclick = function() {
+            scheduleModal.style.display = "none";
+            console.log("done scheduling");
+        };
+
+        window.onclick = function(event) {
+            if(event.target == scheduleModal || event.target == modal) {
+                scheduleModal.style.display = "none";
+                modal.style.display = "none";
+            }
+        };
+        
+        // onclick of button, css needs to change to display: block;
+        button.onclick = function() {
+            modal.style.display = "block";
+            console.log("message submitted!");
+        };
+
+        close.onclick = function() {
+            modal.style.display = "none";
+            console.log("closed");
+        };
+
+
+    </script>
+
+</body>
+</html>
