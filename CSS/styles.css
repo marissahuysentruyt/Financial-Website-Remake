@@ -972,6 +972,10 @@ nav a#mobile {
 }
 
 @media only screen and (max-width: 375px) {
+    #hero-image .left-column h2 {
+        text-align: left;
+        padding-left: 8px;
+    
     #hero-image p {
         font-size: 1em;
         height: auto;
